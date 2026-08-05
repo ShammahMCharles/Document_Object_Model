@@ -3,6 +3,8 @@
   box-sizing: border-box;
 }
 
+
+
 .user-img{
   height: 50px;
   width: 50px;
@@ -33,7 +35,7 @@ button.edit-btn{
 body {
   font-family: Arial;
   padding: 20px;
-  background: #f1f1f1;
+  background: #b39d9d;
 }
 
 /* Header/Title */

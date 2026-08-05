@@ -73,5 +73,8 @@ addMessageForm.addEventListener('submit', (event) => {
   
  
      messagesContainer.appendChild(newMessageContent);
+
+    addMessageForm.reset();
+    postButton.disabled = true;
 });
 

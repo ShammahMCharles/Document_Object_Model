@@ -3,6 +3,32 @@
   box-sizing: border-box;
 }
 
+.user-img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right:1rem;
+  background-image: url("./istockphoto-1337144146-612x612.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+
+#add-message {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+ 
+}
+
+button.delete-btn{
+  gap: 10px;
+}
+
+button.edit-btn{
+  gap: 10px;
+}
 
 body {
   font-family: Arial;

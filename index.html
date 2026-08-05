@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -13,20 +14,36 @@
 
 <div class="row">
   <div class="leftcolumn">
-    <div class="card">
-        <img src="image.jpg" alt="Image">
-        <h2>TITLE HEADING</h2>
-        <p>Some text..</p>
-        <button>Edit Post</button>
-        <button>Publish Post</button>
-        <button>Delete Post</button>
-    </div>
-    <div class="card">
-    <h2>TITLE HEADING</h2>
-        <h5>Title description</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-    </div>
+    <main class="container">
+     
+      <h4>Home</h4>
+      <header class="new-message">
+        <div class="user-img"></div>
+
+        <form id="add-message">
+          <input id="message-title" 
+          type="text" 
+          placeholder="Title" required>
+
+          <textarea id="message-content" 
+          placeholder="What's on your mind?" 
+          cols="20" rows="6" required></textarea>
+
+          <button type="submit" class="post-btn" disabled>Post</button>
+        </form>
+      </header>
+      <ul id="messages-list" class="messages-lists">
+        <li class="messages-list">
+          <div class="message-header">
+            <div class="user-img"></div>
+            <h3 class="message-title">Sample Title</h3>
+          </div>
+          <p class="message-content">Sample content for the message.</p>
+
+        </li>
+      </ul>
+    </main>
+
   </div>
   <div class="rightcolumn">
     <div class="card">
